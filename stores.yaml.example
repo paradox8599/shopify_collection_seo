@@ -1,0 +1,6 @@
+version: 2024-04
+stores:
+  - name: storename
+    token: storetoken
+  - name: storename2
+    token: storetoken2
