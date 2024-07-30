@@ -2,7 +2,8 @@
   "name": "collection-seo",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development bun run main.ts"
+    "dev": "NODE_ENV=development bun run main.ts",
+    "start": "NODE_ENV=production bun run main.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
