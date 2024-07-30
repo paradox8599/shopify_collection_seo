@@ -11,6 +11,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "openai": "^4.53.2",
+    "tiktoken": "^1.0.15",
     "yaml": "^2.5.0"
   }
 }
