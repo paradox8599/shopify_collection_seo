@@ -84,7 +84,7 @@ async function generate() {
 
   // validate & mapping
   if (res.length !== collections.length) {
-    throw new Error("Collection data mismatch");
+    throw new Error("Generated collection data mismatch");
   }
   collections = collections.map((c, i) => {
     const r = res[i];
