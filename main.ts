@@ -68,6 +68,7 @@ async function generate() {
   let collections = await bulkQueryCollections(store);
 
   console.log(collections.map((c) => c.title).join("\n"));
+  console.log(`Total: ${collections.length}`);
 
   // generate seo title & desc
   const res = (
@@ -86,6 +87,8 @@ async function generate() {
   if (res.length !== collections.length) {
     throw new Error("Generated collection data mismatch");
   }
+
+  // concat with original
   collections = collections.map((c, i) => {
     const r = res[i];
     return {
