@@ -14,7 +14,7 @@ export async function bulkQueryCollections(store: Store) {
   await bulkQuery({
     store,
     query: /* GraphQL */ `
-      query MyQuery {
+      query {
         collections {
           edges {
             node {
@@ -42,7 +42,7 @@ export async function bulkUpdateCollections(
   await createBulkImport({
     store,
     mutation: /* GraphQL */ `
-      mutation update_collections($input: CollectionInput!) {
+      mutation ($input: CollectionInput!) {
         collectionUpdate(input: $input) {
           collection {
             id
