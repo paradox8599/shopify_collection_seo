@@ -102,7 +102,7 @@ async function generate() {
   let opt = "";
   while (opt !== "1" && opt !== "2") {
     opt = await prompt(
-      "1. Stop script and review generated output\n2. Continue upload?\n",
+      `1. Stop script and review generated output (${DATA_FILE})\n2. Continue upload?\n`,
     );
     opt = opt.trim();
   }
