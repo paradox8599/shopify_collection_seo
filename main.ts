@@ -29,7 +29,7 @@ async function promptForStore() {
   while (i < 0) {
     const itext = await prompt(
       "Select store:\n" +
-      STORES.stores.map((s, i) => ` ${i + 1}. ${s.name}\n`).join(),
+        STORES.stores.map((s, i) => ` ${i + 1}. ${s.name}\n`).join(),
     );
     const inum = Number.parseInt(itext);
     if (Number.isNaN(inum)) continue;
@@ -109,7 +109,7 @@ async function generate() {
   return opt;
 }
 
-async function main() {
+async function collection_seo() {
   if (!yamlExists()) {
     const opt = await generate();
     if (opt === "1") return;
@@ -128,4 +128,4 @@ async function main() {
   rmYaml();
 }
 
-main();
+collection_seo();
