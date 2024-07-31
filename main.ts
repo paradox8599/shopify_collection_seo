@@ -9,7 +9,7 @@ import {
 } from "./src/shopify/collection";
 import { askAll } from "./src/openai";
 
-const DATA_FILE = "output.yaml";
+const DATA_FILE = "output_collections.yaml";
 
 async function prompt(text: string): Promise<string> {
   return new Promise((res) => {
